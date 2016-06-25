@@ -14,6 +14,13 @@
 		7FBF89231D1E8266007A36A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF89211D1E8266007A36A1 /* LaunchScreen.storyboard */; };
 		7FBF892E1D1E8267007A36A1 /* tanakaProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF892D1D1E8267007A36A1 /* tanakaProjectTests.swift */; };
 		7FBF89391D1E8267007A36A1 /* tanakaProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF89381D1E8267007A36A1 /* tanakaProjectUITests.swift */; };
+		7FBF89471D1E8342007A36A1 /* selectMyTommorow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF89461D1E8342007A36A1 /* selectMyTommorow.gif */; };
+		7FBF89491D1E842B007A36A1 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF89481D1E842B007A36A1 /* button.png */; };
+		7FBF894E1D1E895A007A36A1 /* cosmo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF894A1D1E895A007A36A1 /* cosmo.png */; };
+		7FBF894F1D1E895A007A36A1 /* event.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF894B1D1E895A007A36A1 /* event.gif */; };
+		7FBF89501D1E895A007A36A1 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF894C1D1E895A007A36A1 /* people.png */; };
+		7FBF89511D1E895A007A36A1 /* weather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF894D1D1E895A007A36A1 /* weather.jpg */; };
+		7FBF89531D1E8A9F007A36A1 /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF89521D1E8A9F007A36A1 /* PointViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		7FBF89341D1E8267007A36A1 /* tanakaProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tanakaProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBF89381D1E8267007A36A1 /* tanakaProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tanakaProjectUITests.swift; sourceTree = "<group>"; };
 		7FBF893A1D1E8267007A36A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FBF89461D1E8342007A36A1 /* selectMyTommorow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = selectMyTommorow.gif; sourceTree = "<group>"; };
+		7FBF89481D1E842B007A36A1 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		7FBF894A1D1E895A007A36A1 /* cosmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmo.png; sourceTree = "<group>"; };
+		7FBF894B1D1E895A007A36A1 /* event.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = event.gif; sourceTree = "<group>"; };
+		7FBF894C1D1E895A007A36A1 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		7FBF894D1D1E895A007A36A1 /* weather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weather.jpg; sourceTree = "<group>"; };
+		7FBF89521D1E8A9F007A36A1 /* PointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,19 @@
 		7FBF89171D1E8266007A36A1 /* tanakaProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FBF894A1D1E895A007A36A1 /* cosmo.png */,
+				7FBF894B1D1E895A007A36A1 /* event.gif */,
+				7FBF894C1D1E895A007A36A1 /* people.png */,
+				7FBF894D1D1E895A007A36A1 /* weather.jpg */,
+				7FBF89481D1E842B007A36A1 /* button.png */,
+				7FBF89461D1E8342007A36A1 /* selectMyTommorow.gif */,
 				7FBF89181D1E8266007A36A1 /* AppDelegate.swift */,
 				7FBF891A1D1E8266007A36A1 /* ViewController.swift */,
 				7FBF891C1D1E8266007A36A1 /* Main.storyboard */,
 				7FBF891F1D1E8266007A36A1 /* Assets.xcassets */,
 				7FBF89211D1E8266007A36A1 /* LaunchScreen.storyboard */,
 				7FBF89241D1E8266007A36A1 /* Info.plist */,
+				7FBF89521D1E8A9F007A36A1 /* PointViewController.swift */,
 			);
 			path = tanakaProject;
 			sourceTree = "<group>";
@@ -230,7 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBF89231D1E8266007A36A1 /* LaunchScreen.storyboard in Resources */,
+				7FBF89511D1E895A007A36A1 /* weather.jpg in Resources */,
+				7FBF894F1D1E895A007A36A1 /* event.gif in Resources */,
+				7FBF89501D1E895A007A36A1 /* people.png in Resources */,
+				7FBF89491D1E842B007A36A1 /* button.png in Resources */,
 				7FBF89201D1E8266007A36A1 /* Assets.xcassets in Resources */,
+				7FBF894E1D1E895A007A36A1 /* cosmo.png in Resources */,
+				7FBF89471D1E8342007A36A1 /* selectMyTommorow.gif in Resources */,
 				7FBF891E1D1E8266007A36A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBF89531D1E8A9F007A36A1 /* PointViewController.swift in Sources */,
 				7FBF891B1D1E8266007A36A1 /* ViewController.swift in Sources */,
 				7FBF89191D1E8266007A36A1 /* AppDelegate.swift in Sources */,
 			);
