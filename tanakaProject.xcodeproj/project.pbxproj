@@ -214,6 +214,7 @@
 				TargetAttributes = {
 					7FBF89141D1E8266007A36A1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6E97M8YXF2;
 					};
 					7FBF89281D1E8267007A36A1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -427,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tanakaProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.tanakaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -438,10 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tanakaProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AppAcademia.tanakaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -510,6 +517,7 @@
 				7FBF893F1D1E8267007A36A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FBF89401D1E8267007A36A1 /* Build configuration list for PBXNativeTarget "tanakaProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				7FBF89421D1E8267007A36A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FBF89431D1E8267007A36A1 /* Build configuration list for PBXNativeTarget "tanakaProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				7FBF89451D1E8267007A36A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
