@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FBE77E41D26C22D0026E8E1 /* ピー.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE77E31D26C22D0026E8E1 /* ピー.m4a */; };
+		7FBE77E81D26C2A10026E8E1 /* PrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77E71D26C2A10026E8E1 /* PrepareViewController.swift */; };
+		7FBE77EA1D26C3240026E8E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBE77E91D26C3240026E8E1 /* AVFoundation.framework */; };
+		7FBE77EC1D26C46A0026E8E1 /* prepare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBE77EB1D26C46A0026E8E1 /* prepare.png */; };
+		7FBE77EE1D271F660026E8E1 /* takePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77ED1D271F660026E8E1 /* takePictureViewController.swift */; };
+		7FBE77F01D275C4E0026E8E1 /* SeeYouLaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE77EF1D275C4E0026E8E1 /* SeeYouLaterViewController.swift */; };
 		7FBF89191D1E8266007A36A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF89181D1E8266007A36A1 /* AppDelegate.swift */; };
 		7FBF891B1D1E8266007A36A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF891A1D1E8266007A36A1 /* ViewController.swift */; };
 		7FBF891E1D1E8266007A36A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF891C1D1E8266007A36A1 /* Main.storyboard */; };
@@ -41,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FBE77E31D26C22D0026E8E1 /* ピー.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ピー.m4a"; sourceTree = "<group>"; };
+		7FBE77E71D26C2A10026E8E1 /* PrepareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
+		7FBE77E91D26C3240026E8E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7FBE77EB1D26C46A0026E8E1 /* prepare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prepare.png; path = ../../prepare.png; sourceTree = "<group>"; };
+		7FBE77ED1D271F660026E8E1 /* takePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = takePictureViewController.swift; sourceTree = "<group>"; };
+		7FBE77EF1D275C4E0026E8E1 /* SeeYouLaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeYouLaterViewController.swift; sourceTree = "<group>"; };
 		7FBF89151D1E8266007A36A1 /* tanakaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tanakaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBF89181D1E8266007A36A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FBF891A1D1E8266007A36A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBE77EA1D26C3240026E8E1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +104,7 @@
 		7FBF890C1D1E8266007A36A1 = {
 			isa = PBXGroup;
 			children = (
+				7FBE77E91D26C3240026E8E1 /* AVFoundation.framework */,
 				7FBF89171D1E8266007A36A1 /* tanakaProject */,
 				7FBF892C1D1E8267007A36A1 /* tanakaProjectTests */,
 				7FBF89371D1E8267007A36A1 /* tanakaProjectUITests */,
@@ -111,6 +125,8 @@
 		7FBF89171D1E8266007A36A1 /* tanakaProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FBE77EB1D26C46A0026E8E1 /* prepare.png */,
+				7FBE77E31D26C22D0026E8E1 /* ピー.m4a */,
 				7FBF894A1D1E895A007A36A1 /* cosmo.png */,
 				7FBF894B1D1E895A007A36A1 /* event.gif */,
 				7FBF894C1D1E895A007A36A1 /* people.png */,
@@ -124,6 +140,9 @@
 				7FBF89211D1E8266007A36A1 /* LaunchScreen.storyboard */,
 				7FBF89241D1E8266007A36A1 /* Info.plist */,
 				7FBF89521D1E8A9F007A36A1 /* PointViewController.swift */,
+				7FBE77E71D26C2A10026E8E1 /* PrepareViewController.swift */,
+				7FBE77ED1D271F660026E8E1 /* takePictureViewController.swift */,
+				7FBE77EF1D275C4E0026E8E1 /* SeeYouLaterViewController.swift */,
 			);
 			path = tanakaProject;
 			sourceTree = "<group>";
@@ -252,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBF89231D1E8266007A36A1 /* LaunchScreen.storyboard in Resources */,
+				7FBE77E41D26C22D0026E8E1 /* ピー.m4a in Resources */,
 				7FBF89511D1E895A007A36A1 /* weather.jpg in Resources */,
 				7FBF894F1D1E895A007A36A1 /* event.gif in Resources */,
 				7FBF89501D1E895A007A36A1 /* people.png in Resources */,
+				7FBE77EC1D26C46A0026E8E1 /* prepare.png in Resources */,
 				7FBF89491D1E842B007A36A1 /* button.png in Resources */,
 				7FBF89201D1E8266007A36A1 /* Assets.xcassets in Resources */,
 				7FBF894E1D1E895A007A36A1 /* cosmo.png in Resources */,
@@ -284,7 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBE77EE1D271F660026E8E1 /* takePictureViewController.swift in Sources */,
+				7FBE77E81D26C2A10026E8E1 /* PrepareViewController.swift in Sources */,
 				7FBF89531D1E8A9F007A36A1 /* PointViewController.swift in Sources */,
+				7FBE77F01D275C4E0026E8E1 /* SeeYouLaterViewController.swift in Sources */,
 				7FBF891B1D1E8266007A36A1 /* ViewController.swift in Sources */,
 				7FBF89191D1E8266007A36A1 /* AppDelegate.swift in Sources */,
 			);
