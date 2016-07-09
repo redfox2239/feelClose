@@ -44,7 +44,7 @@ class PrepareViewController: UIViewController {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "HH"
         let nowHour = Int(formatter.stringFromDate(now))
-        if nowHour > 4 || nowHour < 12 {
+        if nowHour > 4 && nowHour < 12 {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
     }
