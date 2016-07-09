@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Social
 
-class takePictureViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class takePictureViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIDocumentInteractionControllerDelegate {
 
     @IBOutlet weak var pictImageView: UIImageView!
+    lazy private var documentInteractionController = UIDocumentInteractionController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,59 @@ class takePictureViewController: UIViewController,UIImagePickerControllerDelegat
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func tapLineButton(sender: AnyObject) {
+        guard let sendImage = self.pictImageView.image else {
+            return
+        }
+        let pasteBoard = UIPasteboard.generalPasteboard()
+        pasteBoard.setData(UIImagePNGRepresentation(sendImage)!, forPasteboardType: "public.png")
+        let urlString = NSString(format: "line://msg/image/%@", pasteBoard.name)
+        if UIApplication.sharedApplication().canOpenURL(NSURL(string: urlString as String)!) {
+            UIApplication.sharedApplication().openURL(NSURL(string: urlString as String)!)
+        } else {
+            // - LINEがインストールされていない場合の処理
+            let urlString = "itms-apps://itunes.apple.com/app/id443904275"
+            let url = NSURL(string: urlString)
+            UIApplication.sharedApplication().openURL(url!)
+        }
+    }
+    
+    @IBAction func tapInstagramButton(sender: AnyObject) {
+        guard let sendImage = self.pictImageView.image else {
+            return
+        }
+        let imageData = UIImageJPEGRepresentation(self.pictImageView.image!, 1.0)
+        let temporaryDirectory = NSTemporaryDirectory() as NSString
+        let temporaryImagePath = temporaryDirectory.stringByAppendingPathComponent("YourImageFileName.igo")
+        _ = imageData!.writeToFile(temporaryImagePath, atomically: true)
+        documentInteractionController.URL = NSURL(fileURLWithPath: temporaryImagePath)
+        documentInteractionController.UTI = "com.instagram.exclusivegram"
+        documentInteractionController.presentOpenInMenuFromRect(
+            self.view.bounds,
+            inView: self.view,
+            animated: true
+        )
+        
+    }
+    
+    @IBAction func tapTweetButton(sender: AnyObject) {
+        guard let sendImage = self.pictImageView.image else {
+            return
+        }
+        let socialVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        socialVC.addImage(sendImage)
+        self.presentViewController(socialVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapFaceBookButton(sender: AnyObject) {
+        guard let sendImage = self.pictImageView.image else {
+            return
+        }
+        let socialVC = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        socialVC.addImage(sendImage)
+        self.presentViewController(socialVC, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

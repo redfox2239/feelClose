@@ -118,22 +118,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJK-8R-dJo">
-                                <rect key="frame" x="52" y="28" width="217" height="177"/>
+                                <rect key="frame" x="48" y="28" width="225" height="106"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="0XE-OT-TkS"/>
+                                    <constraint firstAttribute="height" constant="106" id="0XE-OT-TkS"/>
                                 </constraints>
                                 <string key="text">Please Show
 us
 Today You</string>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="47"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="29"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZT-SR-edj">
-                                <rect key="frame" x="36" y="213" width="248" height="235"/>
+                                <rect key="frame" x="32" y="142" width="256" height="235"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0A-Su-63h">
-                                <rect key="frame" x="116" y="502" width="89" height="42"/>
+                                <rect key="frame" x="115" y="431" width="91" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.77424762727979413" blue="0.7485627273905171" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="保存">
@@ -148,8 +148,24 @@ Today You</string>
                                     <action selector="tapSavePicture:" destination="gPv-Xx-h89" eventType="touchUpInside" id="Fog-18-p8T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-zy-KTA">
+                                <rect key="frame" x="16" y="431" width="91" height="42"/>
+                                <color key="backgroundColor" red="0.34746965846175593" green="1" blue="0.2685500559648083" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="LINE">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapLineButton:" destination="gPv-Xx-h89" eventType="touchUpInside" id="ul9-jc-b7k"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZR-0U-2yn">
-                                <rect key="frame" x="213" y="502" width="89" height="42"/>
+                                <rect key="frame" x="214" y="431" width="91" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.97312300647575734" blue="0.71837218986852114" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <state key="normal" title="Instagram">
@@ -161,11 +177,11 @@ Today You</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="tapSavePicture:" destination="gPv-Xx-h89" eventType="touchUpInside" id="E2V-Yg-pdP"/>
+                                    <action selector="tapInstagramButton:" destination="gPv-Xx-h89" eventType="touchUpInside" id="Zgd-7L-fle"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64j-6q-yav">
-                                <rect key="frame" x="116" y="456" width="89" height="38"/>
+                                <rect key="frame" x="115" y="385" width="91" height="38"/>
                                 <color key="backgroundColor" red="0.79867334060773698" green="1" blue="0.75421181699771211" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="kCb-y4-hag"/>
@@ -183,12 +199,16 @@ Today You</string>
                                     <action selector="tapCameraButton:" destination="gPv-Xx-h89" eventType="touchUpInside" id="xoh-4l-y9X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-zy-KTA">
-                                <rect key="frame" x="19" y="502" width="89" height="42"/>
-                                <color key="backgroundColor" red="0.34746965846175593" green="1" blue="0.2685500559648083" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="LINE">
-                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-BY-rRT">
+                                <rect key="frame" x="65" y="482" width="91" height="42"/>
+                                <color key="backgroundColor" red="0.62333032871373995" green="0.9038108151481522" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="4QL-dw-Cvc"/>
+                                    <constraint firstAttribute="width" constant="91" id="PZ2-F1-9Ev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="23"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -196,21 +216,45 @@ Today You</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="tapSavePicture:" destination="gPv-Xx-h89" eventType="touchUpInside" id="3pn-MA-nik"/>
+                                    <action selector="tapTweetButton:" destination="gPv-Xx-h89" eventType="touchUpInside" id="QC3-Vc-gDR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnz-Qo-x3A">
+                                <rect key="frame" x="164" y="481" width="91" height="43"/>
+                                <color key="backgroundColor" red="0.56993718516999925" green="0.6074232705201339" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="DfX-fz-OBL"/>
+                                    <constraint firstAttribute="width" constant="91" id="iCz-sI-xgR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapFaceBookButton:" destination="gPv-Xx-h89" eventType="touchUpInside" id="yRS-7q-4Ez"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bnz-Qo-x3A" firstAttribute="top" secondItem="oZR-0U-2yn" secondAttribute="bottom" constant="8" id="0Vv-qF-bUh"/>
                             <constraint firstItem="X0A-Su-63h" firstAttribute="top" secondItem="64j-6q-yav" secondAttribute="bottom" constant="8" symbolic="YES" id="1LW-rJ-691"/>
                             <constraint firstItem="EZT-SR-edj" firstAttribute="top" secondItem="kJK-8R-dJo" secondAttribute="bottom" constant="8" symbolic="YES" id="9Sp-9u-0rh"/>
                             <constraint firstItem="kJK-8R-dJo" firstAttribute="top" secondItem="VRT-Vu-Zsw" secondAttribute="bottom" constant="8" symbolic="YES" id="9T1-Ae-v9G"/>
                             <constraint firstItem="64j-6q-yav" firstAttribute="width" secondItem="EZT-SR-edj" secondAttribute="width" multiplier="0.35" constant="2.2000000000000028" id="9gv-GS-5Fp"/>
                             <constraint firstItem="64j-6q-yav" firstAttribute="top" secondItem="EZT-SR-edj" secondAttribute="bottom" constant="8" symbolic="YES" id="Ecq-tj-Nbv"/>
+                            <constraint firstItem="zj7-BY-rRT" firstAttribute="centerX" secondItem="GyC-dA-h16" secondAttribute="centerX" constant="-49.5" id="LHx-kV-2RF"/>
                             <constraint firstItem="64j-6q-yav" firstAttribute="leading" secondItem="X0A-Su-63h" secondAttribute="leading" id="MiS-Y5-Re3"/>
                             <constraint firstItem="Rrd-zy-KTA" firstAttribute="height" secondItem="X0A-Su-63h" secondAttribute="height" id="QAI-9X-ejW"/>
-                            <constraint firstItem="NDU-eK-g6D" firstAttribute="top" secondItem="X0A-Su-63h" secondAttribute="bottom" constant="24" id="RhV-bZ-WXV"/>
+                            <constraint firstItem="NDU-eK-g6D" firstAttribute="top" secondItem="X0A-Su-63h" secondAttribute="bottom" constant="95" id="RhV-bZ-WXV"/>
                             <constraint firstItem="EZT-SR-edj" firstAttribute="centerX" secondItem="64j-6q-yav" secondAttribute="centerX" id="YXJ-Cr-DOH"/>
+                            <constraint firstItem="Bnz-Qo-x3A" firstAttribute="centerX" secondItem="GyC-dA-h16" secondAttribute="centerX" constant="49.5" id="Zmv-yt-TIr"/>
+                            <constraint firstItem="Bnz-Qo-x3A" firstAttribute="centerY" secondItem="zj7-BY-rRT" secondAttribute="centerY" id="cDv-xT-X4y"/>
                             <constraint firstItem="oZR-0U-2yn" firstAttribute="height" secondItem="X0A-Su-63h" secondAttribute="height" id="eWm-Ne-tSJ"/>
                             <constraint firstItem="oZR-0U-2yn" firstAttribute="width" secondItem="X0A-Su-63h" secondAttribute="width" id="fFh-fU-jTG"/>
                             <constraint firstItem="X0A-Su-63h" firstAttribute="leading" secondItem="Rrd-zy-KTA" secondAttribute="trailing" constant="8" id="fTZ-85-97D"/>
@@ -219,10 +263,11 @@ Today You</string>
                             <constraint firstItem="oZR-0U-2yn" firstAttribute="centerY" secondItem="Rrd-zy-KTA" secondAttribute="centerY" id="h9R-Bj-hwm"/>
                             <constraint firstItem="oZR-0U-2yn" firstAttribute="leading" secondItem="X0A-Su-63h" secondAttribute="trailing" constant="8" id="jii-YT-ZpB"/>
                             <constraint firstItem="64j-6q-yav" firstAttribute="trailing" secondItem="X0A-Su-63h" secondAttribute="trailing" id="q2f-nM-vOW"/>
+                            <constraint firstItem="zj7-BY-rRT" firstAttribute="top" secondItem="Rrd-zy-KTA" secondAttribute="bottom" constant="9" id="tjK-MF-Com"/>
                             <constraint firstItem="X0A-Su-63h" firstAttribute="centerY" secondItem="Rrd-zy-KTA" secondAttribute="centerY" id="u3e-7t-lM1"/>
                             <constraint firstItem="kJK-8R-dJo" firstAttribute="centerX" secondItem="EZT-SR-edj" secondAttribute="centerX" id="ubD-L6-sGz"/>
-                            <constraint firstItem="kJK-8R-dJo" firstAttribute="leading" secondItem="GyC-dA-h16" secondAttribute="leadingMargin" constant="36" id="xbg-iX-geV"/>
-                            <constraint firstItem="EZT-SR-edj" firstAttribute="leading" secondItem="GyC-dA-h16" secondAttribute="leadingMargin" constant="20" id="z36-lr-rjW"/>
+                            <constraint firstItem="kJK-8R-dJo" firstAttribute="leading" secondItem="GyC-dA-h16" secondAttribute="leadingMargin" constant="32" id="xbg-iX-geV"/>
+                            <constraint firstItem="EZT-SR-edj" firstAttribute="leading" secondItem="GyC-dA-h16" secondAttribute="leadingMargin" constant="16" id="z36-lr-rjW"/>
                         </constraints>
                     </view>
                     <connections>
