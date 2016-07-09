@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectMyTommorow.gif" translatesAutoresizingMaskIntoConstraints="NO" id="f6U-0u-6av">
-                                <rect key="frame" x="40" y="126" width="240" height="223"/>
+                                <rect key="frame" x="40" y="126" width="240" height="138"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select My Tommorow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPz-S3-rbI">
                                 <rect key="frame" x="77" y="91" width="166" height="21"/>
@@ -51,6 +51,13 @@
                                     <segue destination="gPv-Xx-h89" kind="show" id="UNa-le-M6y"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0.gif" translatesAutoresizingMaskIntoConstraints="NO" id="C4f-GM-17G">
+                                <rect key="frame" x="40" y="272" width="240" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="fYa-70-LTC"/>
+                                    <constraint firstAttribute="width" constant="240" id="x7J-G3-KrC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -58,8 +65,10 @@
                             <constraint firstItem="f6U-0u-6av" firstAttribute="centerX" secondItem="ztF-5P-5YS" secondAttribute="centerX" id="L6U-Tc-Cwe"/>
                             <constraint firstItem="f6U-0u-6av" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="NId-9B-VMl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LDI-FH-we5" secondAttribute="bottom" constant="27" id="O5R-jh-BP1"/>
-                            <constraint firstItem="ztF-5P-5YS" firstAttribute="top" secondItem="f6U-0u-6av" secondAttribute="bottom" constant="65" id="SYr-ZG-AyN"/>
+                            <constraint firstItem="C4f-GM-17G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcH-MF-PQN"/>
+                            <constraint firstItem="ztF-5P-5YS" firstAttribute="top" secondItem="C4f-GM-17G" secondAttribute="bottom" constant="8" id="SPd-nx-BBg"/>
                             <constraint firstItem="fPz-S3-rbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sqg-bE-MdK"/>
+                            <constraint firstItem="C4f-GM-17G" firstAttribute="top" secondItem="f6U-0u-6av" secondAttribute="bottom" constant="8" id="Vc6-pJ-t0e"/>
                             <constraint firstItem="f6U-0u-6av" firstAttribute="top" secondItem="fPz-S3-rbI" secondAttribute="bottom" constant="14" id="Y0B-oo-RrB"/>
                             <constraint firstItem="fPz-S3-rbI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="ZVZ-9A-UAg"/>
                             <constraint firstItem="fPz-S3-rbI" firstAttribute="centerX" secondItem="f6U-0u-6av" secondAttribute="centerX" id="d8v-fg-sTk"/>
@@ -69,6 +78,7 @@
                     <navigationItem key="navigationItem" title="田中さん" id="qdS-ei-E2s"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="animationImageView" destination="C4f-GM-17G" id="KDe-CK-akx"/>
                         <outlet property="goodMorningButton" destination="LDI-FH-we5" id="Gvt-R2-Nbd"/>
                         <outlet property="startButton" destination="ztF-5P-5YS" id="Qg0-KY-7OH"/>
                     </connections>
@@ -364,6 +374,7 @@ See You Tommorow</string>
     </scenes>
     <resources>
         <image name="button.png" width="512" height="512"/>
+        <image name="image0.gif" width="241" height="158"/>
         <image name="prepare.png" width="240" height="240"/>
         <image name="selectMyTommorow.gif" width="620" height="465"/>
         <image name="weather.jpg" width="600" height="600"/>

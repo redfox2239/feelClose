@@ -33,8 +33,10 @@ class takePictureViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     @IBAction func tapSavePicture(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-        UIImageWriteToSavedPhotosAlbum(self.pictImageView.image!, self, nil, nil)
+        guard let image = self.pictImageView.image else {
+            return
+        }
+        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
         self.performSegueWithIdentifier("seeYouLater", sender: nil)
     }
     

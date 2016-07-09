@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var goodMorningButton: UIButton!
+    @IBOutlet weak var animationImageView: UIImageView!
+    var counter: Int = 0
+    var imgData: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +24,26 @@ class ViewController: UIViewController {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "HH"
         let nowHour = Int(formatter.stringFromDate(now))
-        if nowHour > 4 && nowHour < 12 {
+        if nowHour > 15 && nowHour < 22 {
             self.startButton.hidden = true
             self.goodMorningButton.hidden = false
         }
         else {
             self.goodMorningButton.hidden = true
         }
+        
+        for var i in 1..<57 {
+            let img = UIImage(named: "image\(i).gif")
+            imgData.append(img!)
+        }
+
+        animateImage()
+    }
+    
+    func animateImage() {
+        self.animationImageView.animationImages = self.imgData
+        self.animationImageView.animationDuration = 5.0
+        self.animationImageView.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {
