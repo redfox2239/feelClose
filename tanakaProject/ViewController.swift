@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -15,11 +16,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var animationImageView: UIImageView!
     var counter: Int = 0
     var imgData: [UIImage] = []
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // 音楽を鳴らす
+        do {
+            // 音楽を選ぶ
+            let path = NSBundle.mainBundle().pathForResource("ピー", ofType: "m4a")
+            let url = NSURL(fileURLWithPath: path!)
+            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+            audioPlayer.prepareToPlay()
+            
+            audioPlayer.play()
+        }
+        catch {
+            print("エラー")
+        }
+
         let now = NSDate()
         let formatter = NSDateFormatter()
         formatter.dateFormat = "HH"
@@ -32,7 +48,7 @@ class ViewController: UIViewController {
             self.goodMorningButton.hidden = true
         }
         
-        for var i in 1..<57 {
+        for i in 1..<57 {
             let img = UIImage(named: "image\(i).gif")
             imgData.append(img!)
         }
@@ -51,6 +67,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tapChangeNightAndMorningModeButton(sender: AnyObject) {
+        self.startButton.hidden = !self.startButton.hidden
+        self.goodMorningButton.hidden = !self.goodMorningButton.hidden
+    }
 
 }
 

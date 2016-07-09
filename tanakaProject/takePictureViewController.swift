@@ -37,7 +37,12 @@ class takePictureViewController: UIViewController,UIImagePickerControllerDelegat
             return
         }
         UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
-        self.performSegueWithIdentifier("seeYouLater", sender: nil)
+        let alert = UIAlertController(title: "写真を保存しました", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (alert) in
+            self.performSegueWithIdentifier("seeYouLater", sender: nil)
+        }
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {

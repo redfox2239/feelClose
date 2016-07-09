@@ -217,28 +217,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7FBF890C1D1E8266007A36A1 = {
-			isa = PBXGroup;
-			children = (
-				7FBE77E91D26C3240026E8E1 /* AVFoundation.framework */,
-				7FBF89171D1E8266007A36A1 /* tanakaProject */,
-				7FBF892C1D1E8267007A36A1 /* tanakaProjectTests */,
-				7FBF89371D1E8267007A36A1 /* tanakaProjectUITests */,
-				7FBF89161D1E8266007A36A1 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7FBF89161D1E8266007A36A1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7FBF89151D1E8266007A36A1 /* tanakaProject.app */,
-				7FBF89291D1E8267007A36A1 /* tanakaProjectTests.xctest */,
-				7FBF89341D1E8267007A36A1 /* tanakaProjectUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7FBF89171D1E8266007A36A1 /* tanakaProject */ = {
+		7F2FF8091D313B4B00B37825 /* gifImage */ = {
 			isa = PBXGroup;
 			children = (
 				7F6C5E781D30EBE300580E32 /* image0.gif */,
@@ -299,6 +278,35 @@
 				7F6C5EAF1D30EBE300580E32 /* image55.gif */,
 				7F6C5EB01D30EBE300580E32 /* image56.gif */,
 				7F6C5EB11D30EBE300580E32 /* image57.gif */,
+			);
+			name = gifImage;
+			sourceTree = "<group>";
+		};
+		7FBF890C1D1E8266007A36A1 = {
+			isa = PBXGroup;
+			children = (
+				7FBE77E91D26C3240026E8E1 /* AVFoundation.framework */,
+				7FBF89171D1E8266007A36A1 /* tanakaProject */,
+				7FBF892C1D1E8267007A36A1 /* tanakaProjectTests */,
+				7FBF89371D1E8267007A36A1 /* tanakaProjectUITests */,
+				7FBF89161D1E8266007A36A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FBF89161D1E8266007A36A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FBF89151D1E8266007A36A1 /* tanakaProject.app */,
+				7FBF89291D1E8267007A36A1 /* tanakaProjectTests.xctest */,
+				7FBF89341D1E8267007A36A1 /* tanakaProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FBF89171D1E8266007A36A1 /* tanakaProject */ = {
+			isa = PBXGroup;
+			children = (
+				7F2FF8091D313B4B00B37825 /* gifImage */,
 				7FBE77EB1D26C46A0026E8E1 /* prepare.png */,
 				7FBE77E31D26C22D0026E8E1 /* ピー.m4a */,
 				7FBF894A1D1E895A007A36A1 /* cosmo.png */,

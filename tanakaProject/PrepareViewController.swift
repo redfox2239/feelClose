@@ -16,6 +16,7 @@ class PrepareViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var tomorrowLabel: UILabel!
     var audioPlayer: AVAudioPlayer!
+    var timer: NSTimer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,15 +56,16 @@ class PrepareViewController: UIViewController {
     }
     
     @IBAction func tapDoneButton(sender: AnyObject) {
-        let isDidPrepared = true
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(isDidPrepared, forKey: "isDidPrepared")
-        defaults.synchronize()
-        
         prepareLabel.hidden = true
         prepareImageView.hidden = true
         doneButton.hidden = true
         tomorrowLabel.hidden = false
+        
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "backToRootView", userInfo: nil, repeats: false)
+    }
+    
+    func backToRootView() {
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
 
     /*
